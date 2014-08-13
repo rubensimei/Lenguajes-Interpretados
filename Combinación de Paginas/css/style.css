@@ -1,0 +1,223 @@
+body{
+	background-image: url(../images/background.png);
+	background-attachment:fixed;
+}
+
+/*estilo titulo*/
+#titulo{
+	text-align:center;
+	font-family: 'Indie Flower', cursive;
+	font-size:60px;
+	color:#7CFC00;
+}
+
+ul{
+	list-style:none;
+}
+
+h3{
+	background-color:#B0C4DE;
+	font-family:'Oswald', sans-serif;
+	border-radius:15px;
+	box-shadow: 5px 5px 10px #696969;
+	text-align:center;
+}
+
+h2{
+	background-color:#B0C4DE;
+	font-family:'Oswald', sans-serif;
+	border-radius:15px;
+	box-shadow: 5px 5px 10px #696969;
+	text-align:center;
+	float:left;
+	margin-right:30px;
+}
+
+/*estilo menu principal*/
+#main-menu li{
+	display:inline-block;
+	margin-left:8%;
+	padding:15px;
+}
+
+#main-menu{
+	background-color:#FDFD96;
+	border-radius:20px;
+	behavior: url(htc/border-radius.htc);
+	font-family: 'Lobster', cursive;
+	color:#F5DEB3;
+	margin-bottom:50px;
+	box-shadow: 10px 10px 5px black;
+}
+
+/*estilo contenido*/
+#contenido article > img{
+	float:left;
+	padding:15px;
+}
+#contenido{
+	text-align:justify;
+	background-color:#FFEBCD;
+	width:53%;
+	float:left;
+	padding:15px;
+	font-family: 'Coming Soon', cursive;
+	margin-left:13px;
+	margin-right:13px;
+	border-radius:30px;
+	behavior: url(htc/border-radius.htc);
+	margin-bottom:30px;
+}
+
+/*estilo sidebar izquierda*/
+#sidebar{
+	background-color:#F5DEB3;
+	width:15%;
+	float:left;
+	border-radius:30px;
+	behavior: url(htc/border-radius.htc);
+	font-family: 'Lobster', cursive;
+	height:350px;
+}
+
+#sidebar li{margin-top:35px; font-size:20px;}
+
+/*estilo sidebar derecha*/
+#News{
+	background-color:#90EE90;
+	width:25%;
+	float:left;
+	padding:5px;
+	font-family: 'Coming Soon', cursive;
+	text-align:center;
+	border-radius:30px;
+	behavior: url(htc/border-radius.htc);
+}
+
+/*estilo footer*/
+footer{
+	float:left;
+	width:99%;
+}
+
+footer #main-menu > li{
+	margin-left:8%;
+}
+
+footer > p{
+	background-color:#7FFFD4;
+	text-align:center; 
+	border-radius:30px;
+	behavior: url(htc/border-radius.htc);
+	padding:5px;
+	font-family: 'Oswald', sans-serif;
+}
+
+/*estilo a vinculos*/
+a:link  {   
+ text-decoration:none;   
+}  
+
+a { 
+	text-decoration: none; 
+	padding: 1px 3px; 
+	display: inline-block; 
+	-webkit-transition: all 1s linear; 
+	-moz-transition: all 1s linear; 
+	transition: all 1s linear; 
+}
+a:hover { 
+	background: #ccc; 
+	color: white; 
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); 
+	-webkit-transform: scale(1.5,1.5); 
+	-moz-transform: scale(1.5,1.5); 
+	transform: scale(1.5,1.5); 
+	-webkit-transition: all .8s linear; 
+	-moz-transition: all .8s linear; 
+	transition: all .8s linear; 
+}
+
+/*estilo a barra separadora*/
+hr {
+	border: 0; 
+	height: 12px; 
+	box-shadow: inset 0 12px 12px -12px blue;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {   /*reolucion y diseño para pantallas de hasta 980px*/
+
+#contenedor {
+    width: 95%;
+}
+#contenido {
+    width: 45%;
+	margin-right:30px;
+}
+#sidebar {
+    display:none;
+}
+#News{
+	width:40%;
+}
+footer > nav{
+	display:none;
+}
+}
+
+@media screen and (max-width: 650px) {  /*reolucion y diseño para pantallas de hasta 650px*/
+
+nav li{
+	text-align:center;
+}
+#sidebar{
+	width:90%;
+}
+#contenedor{
+	width:85%;
+	margin-left:40px;
+}
+#contenido{
+	width:75%;
+	margin-left:10%;
+}
+#contenido article p,hr{
+	display:none;
+}
+#News{
+	width:90%;
+	margin-left:25px;
+}
+}
+
+@media screen and (max-width: 480px) {  /*reolucion y diseño para pantallas de hasta 480px*/
+
+#sidebar{
+	width:90%;
+	margin:auto;
+}
+#contenedor{
+	width:95%;
+}
+#contenido{
+	width:90%;
+	margin:auto;
+	margin-bottom:30px;
+}
+#contenido article p,hr {
+	display:none;
+}
+#News{
+	width:90%;
+	margin:auto;
+}
+#News article p{
+	display:none;
+}
+#titulo{
+	font-size:40px;
+	
+}
